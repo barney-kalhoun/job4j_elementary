@@ -8,8 +8,8 @@ public class ChessBoard {
                                     && (x2 >= 0 && x2 <= 7)
                                     && (y2 >= 0 && y2 <= 7);
 
-        if ((Math.abs(x2 - x1) == Math.abs(y2 - y1)) && isInsideBoard) {
-            rsl = (x1 != x2) ? Math.abs(x2 - x1) : 0;
+        if (isInsideBoard && Math.abs(x2 - x1) == Math.abs(y2 - y1)) {
+            rsl = Math.abs(x2 - x1);
         }
         return rsl;
     }
