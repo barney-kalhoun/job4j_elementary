@@ -6,8 +6,8 @@ public class ArrayLoop {
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = index * 2 + 3;
         }
-        for (int index = 0; index < numbers.length; index++) {
-            System.out.println((index + 1) + " элемент массива: " + numbers[index]);
+        for (int num : numbers) {
+            System.out.println(num);
         }
     }
 }
