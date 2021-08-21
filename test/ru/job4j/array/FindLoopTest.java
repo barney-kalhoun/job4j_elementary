@@ -13,4 +13,13 @@ public class FindLoopTest {
         int expected = 0;
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void whenArrayHasNo5ThenMinusOne() {
+        int[] data = {7, 4, 9, 1};
+        int el = 5;
+        int result = FindLoop.indexOf(data, el);
+        int expected = -1;
+        Assert.assertEquals(expected, result);
+    }
 }
